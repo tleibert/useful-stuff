@@ -67,7 +67,7 @@ int main()
             }
         }
 
-        printf("%lf\n", *(double *) &storage);
+        printf("%g\n", *(double *) &storage);
         rl_free(line);
     }
 

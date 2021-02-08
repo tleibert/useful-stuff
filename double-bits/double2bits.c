@@ -5,7 +5,7 @@ int main()
 {
     double number;
     printf("Enter double to convert: ");
-    while (scanf("%lf", &number) == 1) {
+    while (scanf("%lg", &number) == 1) {
         long number_hack = *(long *) &number;
         putchar(number_hack & (1l << 63) ? '1' : '0');
         putchar(' ');
